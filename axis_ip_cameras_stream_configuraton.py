@@ -42,7 +42,6 @@ def check_cameras_access(list_of_cameras: list) -> list:
 cameras = list(generate_ip_list('192.168.0.90', 2))  # example of input values
 available_cameras = check_cameras_access(cameras)
 
-
 for i in range(len(cameras)):
     try:
         with webdriver.Chrome() as browser:
